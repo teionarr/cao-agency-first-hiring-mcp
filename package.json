@@ -1,0 +1,24 @@
+{
+  "name": "cao-agency-first-hiring-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remote MCP server that augments an existing hiring process with the 5 surgical adjustments from the Chief Agency Officer playbook — JDs, screening, rubric, STAR probes, calibration session.",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "npm run sync-content && wrangler dev",
+    "deploy": "npm run sync-content && wrangler deploy",
+    "typecheck": "npm run sync-content && tsc --noEmit",
+    "sync-content": "node scripts/sync-content.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "agents": "^0.0.95",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.99.0"
+  }
+}

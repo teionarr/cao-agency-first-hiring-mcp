@@ -1,4 +1,4 @@
-import { SKILL_TEXT, REFERENCE_TEXT, RUBRIC_TEMPLATE, PROBES_TEMPLATE } from "./content.js";
+import { SKILL_TEXT, REFERENCE_TEXT, MAIN_ARTICLE_TEXT, RUBRIC_TEMPLATE, PROBES_TEMPLATE } from "./content.js";
 
 export type KitOptions = {
   roleLevel?: "ic" | "senior" | "lead";
@@ -40,7 +40,10 @@ conversation.`;
     "— SKILL INSTRUCTIONS —",
     SKILL_TEXT.trim(),
     "",
-    "— REFERENCE: HIRING AGENCY-FIRST PEOPLE —",
+    "— MAIN ARTICLE: THE CHIEF AGENCY OFFICER (full thesis) —",
+    MAIN_ARTICLE_TEXT.trim(),
+    "",
+    "— REFERENCE: HIRING AGENCY-FIRST PEOPLE (this MCP's subarticle) —",
     REFERENCE_TEXT.trim(),
     "",
     "— TEMPLATE: AGENCY RUBRIC SUPPLEMENT —",

@@ -9,6 +9,7 @@ const root = join(here, "..");
 const files = {
   SKILL_TEXT: join(root, "content", "SKILL_agency_first_hiring.md"),
   REFERENCE_TEXT: join(root, "content", "REFERENCE_agency_first_hiring.md"),
+  MAIN_ARTICLE_TEXT: join(root, "content", "MAIN_ARTICLE.md"),
   RUBRIC_TEMPLATE: join(root, "content", "templates", "agency-rubric.md"),
   PROBES_TEMPLATE: join(root, "content", "templates", "agency-interview-questions.md"),
 };
